@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.tp.gexogen.lesson1"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest
+    package="com.tp.gexogen.lessons"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main">
+            android:name="com.tp.gexogen.lessons.MainActivity"
+            android:label="@string/title_activity_main"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,15 +21,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Lesson1Activity"
-            android:label="@string/title_activity_second"/>
+            android:name=".lesson1.Lesson1Activity"
+            android:label="@string/title_activity_lesson1"
+            />
         <activity
-            android:name=".Lesson2Activity"
+            android:name=".lesson2.Lesson2Activity"
             android:label="@string/title_activity_lesson2"
-            android:parentActivityName=".MainActivity">
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.tp.gexogen.lesson1.MainActivity"/>
+                android:value="com.tp.gexogen.lessons.MainActivity"
+                />
         </activity>
     </application>
 

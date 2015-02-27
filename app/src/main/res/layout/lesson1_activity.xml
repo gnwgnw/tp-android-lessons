@@ -1,11 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+    >
 
     <fragment
         android:id="@+id/lesson1_activity_fragment_container"
-        class="com.tp.gexogen.lesson1.Lesson1ListFragment"
+        class="com.tp.gexogen.lessons.lesson1.Lesson1ListFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        />
 
 </RelativeLayout>
