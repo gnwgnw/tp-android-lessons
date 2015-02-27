@@ -4,7 +4,7 @@
 
     <fragment
         android:id="@+id/fragment_second"
-        class="com.tp.gexogen.lesson1.NewListFragment"
+        class="com.tp.gexogen.lesson1.Lesson1ListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

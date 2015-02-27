@@ -5,14 +5,14 @@
 
     <fragment
         android:id="@+id/fragment_second"
-        class="com.tp.gexogen.lesson1.NewListFragment"
+        class="com.tp.gexogen.lesson1.Lesson1ListFragment"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
     <fragment
         android:id="@+id/fragment_details"
-        class="com.tp.gexogen.lesson1.LetterFragment"
+        class="com.tp.gexogen.lesson1.Lesson1LetterFragment"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="1" />

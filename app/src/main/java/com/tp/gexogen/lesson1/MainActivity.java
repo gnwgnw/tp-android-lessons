@@ -18,7 +18,14 @@ public class MainActivity extends ActionBarActivity {
         findViewById(R.id.button_open).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                startActivity(new Intent(MainActivity.this, Lesson1Activity.class));
+            }
+        });
+
+        findViewById(R.id.button_lesson2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Lesson2Activity.class));
             }
         });
     }
