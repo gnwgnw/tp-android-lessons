@@ -1,31 +1,33 @@
-package com.tp.gexogen.lesson1;
+package com.tp.gexogen.lessons.lesson2;
 
-import android.content.Intent;
+import android.app.DialogFragment;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.tp.gexogen.lessons.R;
 
-public class MainActivity extends ActionBarActivity {
+
+public class Lesson2Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.lesson2_activity);
 
-        findViewById(R.id.button_open).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_async).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Lesson1Activity.class));
-            }
-        });
-
-        findViewById(R.id.button_lesson2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Lesson2Activity.class));
+                ProgressDialog dialog = new ProgressDialog(Lesson2Activity.this);
+                dialog.setTitle("Async");
+                dialog.setMessage("Message");
+                dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+                dialog.setMax(15);
+                dialog.setIndeterminate(true);
+                dialog.show();
             }
         });
     }
@@ -33,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_lesson2, menu);
         return true;
     }
 
@@ -50,5 +52,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public static class MyDialog extends DialogFragment {
+
     }
 }
