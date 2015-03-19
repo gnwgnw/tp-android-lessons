@@ -12,5 +12,10 @@
     <string name="main_activity_button_open_lesson2">Lesson 2</string>
     <string name="lesson1_activity_letter_button_ok">Ясна=)</string>
     <string name="lesson2_activity_button_hide">Show/hide button</string>
+    <string name="title_activity_lesson5">Lesson5Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="main_activity_button_open_lesson5">Lesson 5</string>
+    <string name="activity_lesson5_button_doservice">DoService</string>
 
 </resources>

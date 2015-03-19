@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme"
         >
         <activity
-            android:name="com.tp.gexogen.lessons.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             >
             <intent-filter>
@@ -33,6 +33,13 @@
                 android:value="com.tp.gexogen.lessons.MainActivity"
                 />
         </activity>
+        <activity
+            android:name=".lesson5.Lesson5Activity"
+            android:label="@string/title_activity_lesson5"
+            >
+        </activity>
+
+        <service android:name=".lesson5.UrlService"/>
     </application>
 
 </manifest>
