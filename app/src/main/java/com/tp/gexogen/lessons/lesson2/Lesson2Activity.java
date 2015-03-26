@@ -39,7 +39,8 @@ public class Lesson2Activity extends ActionBarActivity {
 			}
 		});
 
-		findViewById(R.id.lesson2_activity_button_hide).setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.lesson2_activity_button_hide).setOnClickListener(new View
+				.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				View view = findViewById(R.id.lesson2_activity_button_async);
@@ -54,7 +55,8 @@ public class Lesson2Activity extends ActionBarActivity {
 			}
 		});
 
-		findViewById(R.id.lesson2_activity_button_toast).setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.lesson2_activity_button_toast).setOnClickListener(new View
+				.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				new Thread(new Runnable() {
@@ -63,7 +65,8 @@ public class Lesson2Activity extends ActionBarActivity {
 						runOnUiThread(new Runnable() {
 							@Override
 							public void run() {
-								Toast.makeText(getApplicationContext(), Thread.currentThread().getName(), Toast.LENGTH_SHORT).show();
+								Toast.makeText(getApplicationContext(), Thread.currentThread()
+										.getName(), Toast.LENGTH_SHORT).show();
 							}
 						});
 					}

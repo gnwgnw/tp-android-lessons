@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 import com.tp.gexogen.lessons.R;
 
-public class Lesson1Activity extends FragmentActivity implements Lesson1ListFragment.OnItemSelectedListener {
+public class Lesson1Activity extends FragmentActivity implements Lesson1ListFragment
+		.OnItemSelectedListener {
 
 	private boolean dualPane;
 
@@ -18,7 +19,8 @@ public class Lesson1Activity extends FragmentActivity implements Lesson1ListFrag
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lesson1_activity);
 
-		dualPane = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+		dualPane = getResources().getConfiguration().orientation == Configuration
+				.ORIENTATION_LANDSCAPE;
 	}
 
 	@Override

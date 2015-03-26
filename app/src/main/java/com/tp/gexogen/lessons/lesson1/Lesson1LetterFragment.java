@@ -26,7 +26,8 @@ public class Lesson1LetterFragment extends Fragment {
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+	                         Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.lesson1_activity_letter, container, false);
 	}
 
@@ -51,7 +52,8 @@ public class Lesson1LetterFragment extends Fragment {
 			button.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					getActivity().getSupportFragmentManager().beginTransaction().remove(Lesson1LetterFragment.this).commit();
+					getActivity().getSupportFragmentManager().beginTransaction().remove
+							(Lesson1LetterFragment.this).commit();
 				}
 			});
 		}

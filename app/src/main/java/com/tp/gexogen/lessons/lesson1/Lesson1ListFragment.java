@@ -19,7 +19,8 @@ public class Lesson1ListFragment extends ListFragment {
 	private OnItemSelectedListener mCallback;
 
 	@Override
-	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+	                         Bundle savedInstanceState) {
 		ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
 				android.R.layout.simple_expandable_list_item_1, alphabet);
 		setListAdapter(adapter);
