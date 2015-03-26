@@ -26,4 +26,22 @@
         android:layout_centerHorizontal="true"
         android:inputType="text"
         />
+
+    <Button
+        android:id="@+id/activity_lesson5_button_foreground_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_lesson5_button_doservice"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_lesson5_button_foreground_stop"
+        />
+
+    <Button
+        android:id="@+id/activity_lesson5_button_foreground_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_lesson5_button_foreground_stop"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_lesson5_button_foreground_start"
+        />
 </RelativeLayout>

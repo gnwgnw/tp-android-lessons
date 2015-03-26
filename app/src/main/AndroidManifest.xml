@@ -40,6 +40,7 @@
         </activity>
 
         <service android:name=".lesson5.UrlService"/>
+        <service android:name=".lesson5.ForegroundService"/>
     </application>
 
 </manifest>

@@ -34,5 +34,23 @@ public class Lesson5Activity extends ActionBarActivity {
 				startService(intent);
 			}
 		});
+
+		findViewById(R.id.activity_lesson5_button_foreground_start).setOnClickListener(new View
+				.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Lesson5Activity.this, ForegroundService.class);
+				startService(intent);
+			}
+		});
+
+		findViewById(R.id.activity_lesson5_button_foreground_stop).setOnClickListener(new View
+				.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Lesson5Activity.this, ForegroundService.class);
+				stopService(intent);
+			}
+		});
 	}
 }
