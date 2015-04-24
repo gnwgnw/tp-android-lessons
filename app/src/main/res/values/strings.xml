@@ -17,5 +17,6 @@
     <string name="activity_lesson5_button_doservice">DoService</string>
     <string name="activity_lesson5_button_foreground_stop">Foreground Stop</string>
     <string name="activity_lesson5_button_foreground_start">Foreground Start</string>
+    <string name="main_activity_button_open_lesson7">Lesson 7</string>
 
 </resources>

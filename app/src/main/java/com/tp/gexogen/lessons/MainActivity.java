@@ -8,6 +8,7 @@ import android.view.View;
 import com.tp.gexogen.lessons.lesson1.Lesson1Activity;
 import com.tp.gexogen.lessons.lesson2.Lesson2Activity;
 import com.tp.gexogen.lessons.lesson5.Lesson5Activity;
+import com.tp.gexogen.lessons.lesson7.Lesson7Activity;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -38,6 +39,14 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(MainActivity.this, Lesson5Activity.class));
+			}
+		});
+
+		findViewById(R.id.main_activity_button_open_lesson7).setOnClickListener(new View
+				.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, Lesson7Activity.class));
 			}
 		});
 	}

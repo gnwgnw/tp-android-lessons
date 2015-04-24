@@ -39,6 +39,8 @@
             >
         </activity>
 
+        <activity android:name=".lesson7.Lesson7Activity"/>
+
         <service android:name=".lesson5.UrlService"/>
         <service android:name=".lesson5.ForegroundService"/>
     </application>
